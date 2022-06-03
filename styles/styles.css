@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  background-color: #090b1a;
+  font-family: "Inter", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .card {
+  border-radius: 10px;
+  background-color: #1b1938;
+  max-width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  main .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    gap: 150px;
+    width: 75%;
+  }
+}
+
+main .card .image-phone {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 #aa5cdb);
+          filter: opacity(0.4) drop-shadow(0 0 0 #aa5cdb);
+}
+
+@media (min-width: 1440px) {
+  main .card .image-phone {
+    display: none;
+  }
+}
+
+main .card .image-desktop {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  main .card .image-desktop {
+    display: block;
+    width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-filter: opacity(0.4) drop-shadow(0 0 0 #aa5cdb);
+            filter: opacity(0.4) drop-shadow(0 0 0 #aa5cdb);
+  }
+}
+
+main .card .text {
+  text-align: center;
+}
+
+main .card .text .big-text {
+  padding-bottom: 20px;
+  padding-top: 35px;
+}
+
+@media (min-width: 1440px) {
+  main .card .text .big-text {
+    padding-top: 100px;
+  }
+}
+
+main .card .text .big-text .insights {
+  margin: auto;
+  padding-bottom: 15px;
+  color: white;
+  max-width: 225px;
+}
+
+@media (min-width: 1440px) {
+  main .card .text .big-text .insights {
+    font-size: 40px;
+    max-width: 474px;
+    margin: 0;
+    margin-left: 100px;
+    text-align: start;
+  }
+}
+
+main .card .text .big-text .insights br {
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  main .card .text .big-text .insights br {
+    display: none;
+  }
+}
+
+main .card .text .big-text .insights span {
+  color: #aa5cdb;
+}
+
+main .card .text .big-text #discover {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  max-width: 250px;
+  line-height: 24px;
+  font-weight: lighter;
+  margin: auto;
+}
+
+@media (min-width: 1440px) {
+  main .card .text .big-text #discover {
+    max-width: 300px;
+    text-align: left;
+    margin-left: 100px;
+  }
+}
+
+main .card .text .small-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding-top: 35px;
+}
+
+@media (min-width: 1440px) {
+  main .card .text .small-text {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    gap: 60px;
+  }
+}
+
+main .card .text .small-text .works {
+  color: white;
+}
+
+main .card .text .small-text .works h3 {
+  padding-bottom: 5px;
+  font-size: 25px;
+}
+
+main .card .text .small-text .works p {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: lighter;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
